@@ -147,9 +147,10 @@ void ClfMilBoost::update( const Mat& posx, const Mat& negx )
   //  Ftr::compute( negx, _ftrs );
 
   // initialize H
-  static std::vector<float> Hpos, Hneg;
-  Hpos.clear();
-  Hneg.clear();
+  //   static std::vector<float> Hpos, Hneg;
+  //   Hpos.clear();
+  //   Hneg.clear();
+  std::vector<float> Hpos, Hneg;
   Hpos.resize( posx.rows, 0.0f ), Hneg.resize( negx.rows, 0.0f );
 
   _selectors.clear();
